@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="styles.css" type="text/css">
+	</head>
+
+	<body>
+		<header class="container-fluid">
+			<h1>Adoptee Citizenship Action</h1>
+			<button id="reload" class="btn btn-link btn-lg">&laquo; start over</button>
+		</header>
+		
+		<main class="container">
+			<div class="intro">
+				<p>As international adoptees (or parents of an adopted child), it is encouraged to double-check your citizenship status and ensure you have the necessary documentation to prove that you are U.S. citizens. </p>
+				<p>Even if you possess a valid passport, it is recommended that you also have your Naturalization Certificate or Certificate of Citizenship. While a U.S. passport can be used to prove citizenship, it is not a USCIC-issued document that officially determines citizenship status.</p>
+				<p>Additionally, you may have confusion as to which documents you should have, depending on when you were adopted.</p>
+				<p>This tool will help international adoptees determine their citizenship and the steps to ensure they have the correct papers.</p>
+				<button class="respond btn btn-default btn-lg" data-value="start">Check my citizenship status</button>
+			</div>
+			<div class="question step1">
+				<h2>Were you issued a Naturalization Certificate?</h2>
+				<div class="reply1">
+					<button class="respond btn btn-default btn-lg" data-value="issued-yes">Yes, I was issued one</button>
+					<button class="respond btn btn-default btn-lg" data-value="issued-no">No, I was not</button>
+				</div>
+			</div>
+			
+			<div class="question step2">
+				<h2>Great! Do you know where the original is?</h2>
+				<div class="reply2">
+					<button class="respond btn btn-default btn-lg" data-value="possess-yes">Yes, I have the original</button>
+					<button class="respond btn btn-default btn-lg" data-value="possess-no">No, I lost it or only have copies</button>
+				</div>
+			</div>
+			
+			<div class="question step3a">
+	 			<h2>Was your adoption finalized before you turned 18?</h2>
+				<div class="reply3a">
+					<button class="respond btn btn-default btn-lg" data-value="under-18">Yes, I was under 18</button>
+					<button class="respond btn btn-default btn-lg" data-value="pre-1983">No, I was over 18</button>
+				</div>
+			</div>
+			
+			<div class="question step3">
+	 			<h2>Were you born on or after February 27, 1983?</h2>
+				<div class="reply3">
+					<button class="respond btn btn-default btn-lg" data-value="post-1983">Yes, I was born after Feb 27, 83</button>
+					<button class="respond btn btn-default btn-lg" data-value="pre-1983">No, I was born before Feb 27, 83</button>
+				</div>
+			</div>
+			
+			<div class="question step4">
+				<h2>Were you issued a Certificate of Citizenship?</h2>
+				<div class="reply4">
+					<button class="respond btn btn-default btn-lg" data-value="issued-yes">Yes, I was issued one</button>
+					<button class="respond btn btn-default btn-lg" data-value="coc-issued-no">No, I was not</button>
+				</div>
+			</div>
+			
+			<div class="end success">
+				<h2>You're all set!</h2>
+				<h3>You are a U.S. citizen</h3>
+				<p>Good job having all your ducks in a row. Your Naturalization Certificate or Certificate of Citizenship is proof of your citizenship, so make sure to keep it in a safe place!</p>
+				<p>If you need a copy of your certificate to submit for things like visa applications or other foreign government uses, you can get a "certified true copy" by going to your local USCIS office. <a href="https://www.uscis.gov/tools/how-do-i-customer-guides/how-do-i-guides-us-citizens/how-do-i-obtain-certified-true-copies-certificate-naturalization" target="_blank">Find out more on the USCIS website</a>.
+			</div>
+			<div class="end replace">
+				<h2>File an N-565 Request to Get a Replacement</h2>
+				<h3>Your Naturalization Certificate is proof of your U.S. citizenship.</h3>
+				<p>Visit <a href="https://www.uscis.gov/n-565" target="_blank">U.S. Citizenship and Immigration Services</a> to learn how to file a request for a replacement certificate.</p>
+				<p>According to USCIS, a photocopy of the certificate of naturalization or citizenship is not a valid document for most legal purposes.</p>
+				<p>If you need a copy of your certificate to submit for things like visa applications or other foreign government uses, you can get a "certified true copy" by going to your local USCIS office. <a href="https://www.uscis.gov/tools/how-do-i-customer-guides/how-do-i-guides-us-citizens/how-do-i-obtain-certified-true-copies-certificate-naturalization" target="_blank">Find out more on the USCIS website</a>.
+			</div>
+			<div class="end coc-file">
+				<h2>File an N-600 Application</h2>
+				<h3>Your Certificate of Citizenship is proof of your U.S. citizenship.</h3>
+				<p>While you likely acquired citizenship automatically under the Child Citizenship Act of 2000, proof of citizenship in the form of a certificate was not automatically issued.</p>
+				<p>Visit <a href="https://www.uscis.gov/n-600" target="_blank">U.S. Citizenship and Immigration Services</a> to download the form and get instructions for applying for a Certificate of Citizenship.</p>
+				<p>Read the <a href="https://www.uscis.gov/sites/default/files/files/pressrelease/ChildCitizenshipAct_120100.pdf" target+"_blank">fact sheet</a> for more information on the CCA2000.
+			</div>
+			<div class="end urgent">
+				<h2>You may be an <u>adoptee without citizenship</u></h2>
+				<p>According to the <a href="https://travel.state.gov/content/adoptionsabroad/en/us-visa-for-your-child/acquiring-us-citizenship-for-your-child.html" target="_blank">U.S. Department of State</a>: 
+				<blockquote>"Children who were 18 or older on February 27, 2001, did NOT acquire U.S. citizenship under the Child Citizenship Act. In recent years, many adoptees have found that although they were legally adopted and have been U.S. residents for most of their lives, they do not hold U.S. citizenship."</blockquote>
+				<p>Contact the <a href="http://adopteerightscampaign.org/" target="_blank">Adoptee Rights Campaign</a> and/or your agency for information and support.</p>
+				<p>It is also recommended that you seek council from an immigration attorney at your convenience.</p>
+			</div>
+		</main>
+		
+		<footer>
+			<div class="row">
+			<p>&copy; 2017 Ellen Manuszak | Information provided with thanks to Spencer Stevens</p>
+			<p>All information is general in nature only and should not be taken as legal advice. Viewing this content does not create an attorney-client relationship. If you need legal advice, please contact an attorney directly.</p>
+			<p>This site is for personal use only and is not affiliated in any way with U.S. Customs and Immigration Services.</p>
+			</div>
+		</footer>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	</body>
+</html>
