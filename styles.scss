@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-html {
-  position: relative;
-  min-height: 100%;
+html, body {
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 body {
+	display: flex;
+	flex-direction: column;
 	background: #000428; /* fallback for old browsers */
 	background: -webkit-linear-gradient(-45deg, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(-45deg, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color:ivory;
-	margin-bottom: 18vh;
 	font: 16px 'Open Sans', sans-serif;
 }
 a {
@@ -18,7 +19,8 @@ a {
 		text-decoration: underline;
 	}
 }
-header {
+
+.site-header {
 	height: 10vh;
 	position: relative;
 	h1 {
@@ -42,8 +44,9 @@ header {
 }
 .container {
 	width: 80%;
-	margin: 0 auto;
-	margin-top: 12vh;
+	margin: auto;
+// 	margin-top: 12vh;
+	height: auto;
 }
 .question, .end {
 	display: none;
@@ -77,22 +80,18 @@ button[data-value="start"] {
 [class^="reply"] {
 	margin-top: 1em;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 18vh;
-  text-align: center;
-  p {
+.disclaimer {
+	align-self: flex-end;
+	text-align: center;
+	p {
 	  line-height:1;
 	    font-size: 12px;
 	  color:invert(#337ab7);
-  }
-  .row {
+	}
+	.row {
 	  border-top: ivory 1px solid;
 	  padding-top: .5em;
 	  width:80%;
 	  margin: 0 auto;
-  }
+	}
 }
