@@ -22,6 +22,7 @@ a:hover {
 
 .site-header {
   height: 10vh;
+  width: 100%;
   position: relative; }
   .site-header h1 {
     font-size: 28px;
@@ -39,7 +40,7 @@ a:hover {
       clear: right; }
 
 .container {
-  width: 80%;
+  max-width: 70%;
   margin: auto;
   height: auto; }
 
@@ -72,7 +73,6 @@ button[data-value="start"] {
   margin-top: 1em; }
 
 .disclaimer {
-  align-self: flex-end;
   text-align: center; }
   .disclaimer p {
     line-height: 1;
@@ -81,5 +81,5 @@ button[data-value="start"] {
   .disclaimer .row {
     border-top: ivory 1px solid;
     padding-top: .5em;
-    width: 80%;
+    max-width: 70%;
     margin: 0 auto; }
