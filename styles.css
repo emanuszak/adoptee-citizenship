@@ -21,7 +21,7 @@ a:hover {
   text-decoration: underline; }
 
 .site-header {
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   position: relative; }
   .site-header h1 {
