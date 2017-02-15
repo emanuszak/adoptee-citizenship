@@ -20,7 +20,10 @@ a:hover {
   color: #004e92;
   text-decoration: underline; }
 
-h2, h3, p {
+h2, h3 {
+  margin-bottom: 1em; }
+
+p {
   margin-bottom: 1.5em; }
 
 .site-header {
