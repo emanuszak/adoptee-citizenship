@@ -19,7 +19,9 @@ a {
 		text-decoration: underline;
 	}
 }
-
+p {
+	margin-bottom: 1.5em;
+}
 .site-header {
 	min-height: 10vh;
 	width: 100%;
@@ -30,11 +32,13 @@ a {
 		display: inline-block;
 		vertical-align: middle;
 	}
-	button#reload.btn-link {
+	#reload.btn-link {
 		display: inline-block;
 		vertical-align: middle;
 		float:right;
 		color:invert(#337ab7);
+		outline: none;
+		border: none;
 		&:hover {
 			color: complement(#337ab7);
 		}
@@ -78,7 +82,7 @@ button[data-value="start"] {
 	}
 }
 [class^="reply"] {
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 .disclaimer {
 	text-align: center;
